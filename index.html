@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1DN</title>
+  </head>
+  <body>
+    <header>
+      <h1>-- SHAPE ARTIST --</h1>
+    </header>
+    <nav>
+      <a id="new-painting" class="nov-list">New painting</a>
+      <a id="gallery" class="galerija" href="gallery.html">Gallery</a>
+      <a id="sources" class="sources" href="sources.html">Sources</a>
+    </nav>
+    <article>
+      <div id="canvas">
+        <svg id="svg" width="100%" height="100%"></svg>
+      </div>
+    </article>
+    <aside>
+      <div class="shape-container">
+        <div class="shape">
+          <input type="radio" id="triangle" name="shape" value="triangle" />
+          <label class="label-shape" for="triangle">Triangle</label><br />
+        </div>
+
+        <div class="shape">
+          <input type="radio" id="square" name="shape" value="square" checked />
+          <label class="label-shape" for="square">Square</label><br />
+        </div>
+
+        <div class="shape">
+          <input type="radio" id="ellipse" name="shape" value="ellipse" />
+          <label class="label-shape" for="ellipse">Ellipse</label><br />
+        </div>
+
+        <div class="shape">
+          <input type="radio" id="circle" name="shape" value="circle" />
+          <label class="label-shape" for="circle">Circle</label><br />
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slider-label">
+          <input
+            type="range"
+            min="10"
+            max="100"
+            value="20"
+            class="slider"
+            id="myRange"
+          />
+          <label class="label-size" for="slide-container" class="slider-label"
+            >Choose a size</label
+          >
+        </div>
+      </div>
+      <div class="color-container">
+        <div class="color-label">
+          <input
+            type="color"
+            id="selected-color"
+            name="selected-color"
+            value="#FF0000"
+          />
+          <label class="label-color" for="selected-color">Select a color</label>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="button">Add</button>
+      </div>
+    </aside>
+    <footer>
+      <button id="Save">Save</button>
+      <button id="Delete">Delete</button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="script.mjs"></script>
+  </body>
+</html>
